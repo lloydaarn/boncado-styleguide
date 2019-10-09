@@ -1,0 +1,16 @@
+@import '~src/styles/variables';
+
+.navbar {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0E0E14;
+    .navbar-brand {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: $secondary-color;
+    }
+}
