@@ -1,0 +1,54 @@
+@import '~src/styles/abstracts/variables';
+
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.bg-primary-light {
+    background-color: $primary-color-light !important;
+}
+
+.bg-primary-dark {
+    background-color: $primary-color-dark !important;
+}
+
+.bg-secondary {
+    background-color: $secondary-color !important;
+}
+
+.bg-secondary-light {
+    background-color: $secondary-color-light !important;
+}
+
+.bg-secondary-dark {
+    background-color: $secondary-color-dark !important;
+}
+
+.bg-tertiary {
+    background-color: $tertiary-color;
+}
+
+.bg-tertiary-light {
+    background-color: $tertiary-color-light;
+}
+
+.bg-tertiary-dark {
+    background-color: $tertiary-color-dark;
+}
+
+.bg-success {
+    background-color: $success-color !important;
+}
+
+.bg-danger {
+    background-color: $danger-color !important;
+}
+
+.bg-warning {
+    background-color: $warning-color !important;
+}
+
+.bg-info {
+    background-color: $info-color !important;
+}

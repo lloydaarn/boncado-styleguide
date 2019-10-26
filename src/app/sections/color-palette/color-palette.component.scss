@@ -1,0 +1,22 @@
+.color-shades {
+    margin-bottom: 10px;
+    .shade-box {
+        display: flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -ms-flex-pack: justify;
+        width: 30%;
+        height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+.color-box {
+    margin-bottom: 10px;
+    height: 100px;
+}

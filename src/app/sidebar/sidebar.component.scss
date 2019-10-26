@@ -1,13 +1,11 @@
-@import '~src/styles/variables';
-@import '~src/styles/utils';
-
+@import '~src/styles/abstracts/variables';
 
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    padding: 30px 15px;
+    padding: 15px;
     width: 320px;
     background-color: #161720;
     color: #B4B6C5;
@@ -37,6 +35,13 @@
                     text-decoration: none;
                     color: #fff;
                 }
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+            &:nth-child(n+7) > a{
+                opacity: .5;
+                pointer-events: none;
             }
         }
     }

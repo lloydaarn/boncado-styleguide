@@ -1,9 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~src/styles/global';
-@import '~src/styles/variables';
-@import '~src/styles/utils';
+
+// configurations
+@import '~src/styles/abstracts/variables';
+
+// base 
+@import '~src/styles/base/reboot';
+@import '~src/styles/base/base';
+
+// compontents
+@import '~src/styles/components/buttons';
+@import '~src/styles/components/forms';
+@import '~src/styles/components/tables';
+
+// utilities
+@import '~src/styles/utilities/bootstrap-4-utilities';
+@import '~src/styles/utilities/spacing';
+@import '~src/styles/utilities/color';
+@import '~src/styles/utilities/typography';
+
+// boncado-styleguide app styles
+@import '~src/styles/app/syntax';
+@import '~src/styles/app/docs';
+@import '~src/styles/app/app';
+
+
 
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
 }

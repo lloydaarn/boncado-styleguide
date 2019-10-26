@@ -1,4 +1,4 @@
-@import '~src/styles/variables';
+@import '~src/styles/abstracts/variables';
 
 .navbar {
     position: fixed;
@@ -6,6 +6,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    border-radius: 0;
+    border: 0;
     background-color: #0E0E14;
     .navbar-brand {
         font-family: 'Quicksand', sans-serif;

@@ -5,6 +5,7 @@ import { TypographyComponent } from './sections/typography/typography.component'
 import { ColorPaletteComponent } from './sections/color-palette/color-palette.component';
 import { ButtonsComponent } from './sections/buttons/buttons.component';
 import { IconographyComponent } from './sections/iconography/iconography.component';
+import { FormsComponent } from './sections/forms/forms.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
   {path: 'color-palette', component: ColorPaletteComponent},
   {path: 'buttons', component: ButtonsComponent},
-  {path: 'iconography', component: IconographyComponent}
+  {path: 'iconography', component: IconographyComponent},
+  {path: 'forms', component: FormsComponent}
 ];
 
 @NgModule({

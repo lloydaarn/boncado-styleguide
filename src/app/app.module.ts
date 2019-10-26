@@ -11,6 +11,7 @@ import { MainPanelComponent } from './main-panel/main-panel.component';
 import { ColorPaletteComponent } from './sections/color-palette/color-palette.component';
 import { ButtonsComponent } from './sections/buttons/buttons.component';
 import { IconographyComponent } from './sections/iconography/iconography.component';
+import { FormsComponent } from './sections/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { IconographyComponent } from './sections/iconography/iconography.compone
     MainPanelComponent,
     ColorPaletteComponent,
     ButtonsComponent,
-    IconographyComponent
+    IconographyComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

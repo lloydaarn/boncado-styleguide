@@ -22,7 +22,6 @@ export class MainPanelComponent implements OnInit {
     this.title = e.title;
     this.isHome = this.title == "Home" ? true : false
     this.setActive.emit(this.title);
-    console.log(this.title);
   }
 
 
