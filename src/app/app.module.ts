@@ -12,6 +12,12 @@ import { ColorPaletteComponent } from './sections/color-palette/color-palette.co
 import { ButtonsComponent } from './sections/buttons/buttons.component';
 import { IconographyComponent } from './sections/iconography/iconography.component';
 import { FormsComponent } from './sections/forms/forms.component';
+import { FormControlsComponent } from './sections/form-controls/form-controls.component';
+import { TablesComponent } from './sections/tables/tables.component';
+import { ModalsComponent } from './sections/modals/modals.component';
+import { TooltipsComponent } from './sections/tooltips/tooltips.component';
+import { PopoversComponent } from './sections/popovers/popovers.component';
+import { LibrariesComponent } from './sections/libraries/libraries.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { FormsComponent } from './sections/forms/forms.component';
     ColorPaletteComponent,
     ButtonsComponent,
     IconographyComponent,
-    FormsComponent
+    FormsComponent,
+    FormControlsComponent,
+    TablesComponent,
+    ModalsComponent,
+    TooltipsComponent,
+    PopoversComponent,
+    LibrariesComponent
   ],
   imports: [
     BrowserModule,

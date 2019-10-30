@@ -1,0 +1,120 @@
+div.tooltip {
+    &.top .tooltip-arrow {
+        border-top-color: #161720;
+    }
+    &.right .tooltip-arrow {
+        border-right-color: #161720;
+    }
+    &.bottom .tooltip-arrow {
+        border-bottom-color: #161720;
+    }
+    &.left .tooltip-arrow {
+        border-left-color: #161720;
+    }
+    .tooltip-inner {
+        padding: 4px 10px;
+        background-color: #161720;
+        font-size: 15px;
+    }
+}
+
+.tooltip-primary {
+    + div.tooltip {
+        &.top .tooltip-arrow {
+            border-top-color: $primary-color;
+        }
+        &.right .tooltip-arrow {
+            border-right-color: $primary-color;
+        }
+        &.bottom .tooltip-arrow {
+            border-bottom-color: $primary-color;
+        }
+        &.left .tooltip-arrow {
+            border-left-color: $primary-color;
+        }
+        .tooltip-inner {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.tooltip-secondary {
+    + div.tooltip {
+        &.top .tooltip-arrow {
+            border-top-color: $secondary-color;
+        }
+        &.right .tooltip-arrow {
+            border-right-color: $secondary-color;
+        }
+        &.bottom .tooltip-arrow {
+            border-bottom-color: $secondary-color;
+        }
+        &.left .tooltip-arrow {
+            border-left-color: $secondary-color;
+        }
+        .tooltip-inner {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.tooltip-danger {
+    + div.tooltip {
+        &.top .tooltip-arrow {
+            border-top-color: $danger-color;
+        }
+        &.right .tooltip-arrow {
+            border-right-color: $danger-color;
+        }
+        &.bottom .tooltip-arrow {
+            border-bottom-color: $danger-color;
+        }
+        &.left .tooltip-arrow {
+            border-left-color: $danger-color;
+        }
+        .tooltip-inner {
+            background-color: $danger-color;
+        }
+    }
+}
+
+.tooltip-warning {
+    + div.tooltip {
+        &.top .tooltip-arrow {
+            border-top-color: $warning-color;
+        }
+        &.right .tooltip-arrow {
+            border-right-color: $warning-color;
+        }
+        &.bottom .tooltip-arrow {
+            border-bottom-color: $warning-color;
+        }
+        &.left .tooltip-arrow {
+            border-left-color: $warning-color;
+        }
+        .tooltip-inner {
+            background-color: $warning-color;
+            color: #000;
+        }
+    }
+}
+
+.tooltip-info {
+    + div.tooltip {
+        &.top .tooltip-arrow {
+            border-top-color: $info-color;
+        }
+        &.right .tooltip-arrow {
+            border-right-color: $info-color;
+        }
+        &.bottom .tooltip-arrow {
+            border-bottom-color: $info-color;
+        }
+        &.left .tooltip-arrow {
+            border-left-color: $info-color;
+        }
+        .tooltip-inner {
+            background-color: $info-color;
+        }
+    }
+}

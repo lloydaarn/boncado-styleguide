@@ -1,40 +1,54 @@
 <div class="main-panel-content">
     <div class="mb-30">
-        <div class="h3 ff-quicksand">Forms</div>
+        <div class="h3 text-title">Forms</div>
         <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
     </div>
 
     <div class="h4 fw-bold">Default Form</div>
+
     <div class="bd-example">
-        <form class="form form-default">
-            <div class="form-group"> <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div>
-            <div class="form-group"> <label for="exampleInputPassword1">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> </div>
-            <div class="form-group"> <label for="exampleInputFile">File input</label> <input type="file" id="exampleInputFile">
+        <form class="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
                 <p class="help-block">Example block-level help text here.</p>
             </div>
-            <div class="bc-checkbox checkbox">
-                <label><input type="checkbox"><span>Check me out</span></label>
+            <div class="bc-checkbox">
+                <label>
+                    <input type="checkbox">
+                    <span>Check me out!</span>
+                </label>
             </div>
-            
-            <span class="mt-20 help-block">Radio Buttons</span>
-            <div class="bc-radio radio">
+            <p class="help-block">Radio Buttons</p>
+            <div class="bc-radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                     <span>Option one is this and that&mdash;be sure to include why it's great</span>
                 </label>
             </div>
-            <div class="bc-radio radio">
+            <div class="bc-radio">
                 <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    <span>Option one is this and that&mdash;be sure to include why it's great</span>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <span>Option two can be something else and selecting it will deselect option one</span>
                 </label>
             </div>
-
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
+
     </div>
+
+
+
     <figure class=highlight>
-        <pre><code class=language-html data-lang=html><span class=nt>&lt;form <span class=na>class=</span><span class=s>"form form-default"</span>&gt;</span>
+        <pre><code class=language-html data-lang=html><span class=nt>&lt;form <span class=na>class=</span><span class=s>"form"</span>&gt;</span>
     <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>"form-group"</span><span class=nt>&gt;</span>
         <span class=nt>&lt;label</span> <span class=na>for=</span><span class=s>"exampleInputEmail1"</span><span class=nt>&gt;</span>Email address<span class=nt>&lt;/label&gt;</span>
         <span class=nt>&lt;input</span> <span class=na>type=</span><span class=s>"email"</span> <span class=na>class=</span><span class=s>"form-control"</span> <span class=na>id=</span><span class=s>"exampleInputEmail1"</span> <span class=na>placeholder=</span><span class=s>"Email"</span><span class=nt>&gt;</span>
@@ -48,12 +62,25 @@
         <span class=nt>&lt;input</span> <span class=na>type=</span><span class=s>"file"</span> <span class=na>id=</span><span class=s>"exampleInputFile"</span><span class=nt>&gt;</span>
         <span class=nt>&lt;p</span> <span class=na>class=</span><span class=s>"help-block"</span><span class=nt>&gt;</span>Example block-level help text here.<span class=nt>&lt;/p&gt;</span>
     <span class=nt>&lt;/div&gt;</span>
-    <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>"bc-checkbox checkbox"</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>"bc-checkbox"</span><span class=nt>&gt;</span>
         <span class=nt>&lt;label&gt;</span>
             <span class=nt>&lt;input</span> <span class=na>type=</span><span class=s>"checkbox"</span><span class=nt>&gt;</span>
             <span class=nt>&lt;span</span><span class=nt>&gt;</span>Check me out!<span class=nt>&lt;/span&gt;</span>
         <span class=nt>&lt;/label&gt;</span>
     <span class=nt>&lt;/div&gt;</span>
+    <span class=nt>&lt;p</span> <span class=na>class=</span><span class=s>"help-block"</span><span class=nt>&gt;</span>Radio Buttons<span class=nt>&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bc-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bc-radio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Option two can be something else and selecting it will deselect option one<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
     <span class=nt>&lt;button</span> <span class=na>type=</span><span class=s>"submit"</span> <span class=na>class=</span><span class=s>"btn btn-default"</span><span class=nt>&gt;</span>Submit<span class=nt>&lt;/button&gt;</span>
 <span class=nt>&lt;/form&gt;</span></code></pre>
     </figure>

@@ -39,10 +39,10 @@
                     text-decoration: none;
                 }
             }
-            &:nth-child(n+7) > a{
-                opacity: .5;
-                pointer-events: none;
-            }
+            // &:nth-child(n+12) > a{
+            //     opacity: .5;
+            //     pointer-events: none;
+            // }
         }
     }
 }

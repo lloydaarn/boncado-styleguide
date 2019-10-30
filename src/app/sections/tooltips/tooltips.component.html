@@ -1,0 +1,96 @@
+<div class="main-panel-content">
+    <div class="h3 text-title">Tooltips</div>
+
+    <br>
+    <div class="h4 fw-bold">Examples</div>
+    <p>Four options are available: top, right, bottom, and left aligned.</p>
+    <div class="bs-example bs-example-tooltip">
+        <div class="tooltip left" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the left
+            </div>
+        </div>
+        <div class="tooltip top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the top
+            </div>
+        </div>
+        <div class="tooltip bottom" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the bottom
+            </div>
+        </div>
+        <div class="tooltip right" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the right
+            </div>
+        </div>
+    </div>
+    <figure class="highlight">
+        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip on left"</span><span class="nt">&gt;</span>Tooltip on left<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>Tooltip on top<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span><span class="nt">&gt;</span>Tooltip on bottom<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip on right"</span><span class="nt">&gt;</span>Tooltip on right<span class="nt">&lt;/button&gt;</span></code></pre>
+    </figure>
+
+    <br>
+
+    <div class="h4 fw-bold">Styling</div>
+
+    <div class="bs-example bs-example-tooltip d-flex flex-wrap align-items-center">
+        <div class="tooltip-primary"></div>
+        <div class="tooltip left" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the left
+            </div>
+        </div>
+        <div class="tooltip-secondary"></div>
+        <div class="tooltip top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the top
+            </div>
+        </div>
+        <div class="tooltip-danger"></div>
+        <div class="tooltip top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the top
+            </div>
+        </div>
+        <div class="tooltip-warning"></div>
+        <div class="tooltip bottom" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the bottom
+            </div>
+        </div>
+        <div class="tooltip-info"></div>
+        <div class="tooltip right" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Tooltip on the right
+            </div>
+        </div>
+    </div>
+    <figure class="highlight">
+        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default tooltip-primary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip on left"</span><span class="nt">&gt;</span>Tooltip on left<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default tooltip-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>Tooltip on top<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default tooltip-danger"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>Tooltip on top<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default tooltip-warning"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span><span class="nt">&gt;</span>Tooltip on bottom<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default tooltip-info"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip on right"</span><span class="nt">&gt;</span>Tooltip on right<span class="nt">&lt;/button&gt;</span></code></pre>
+    </figure>
+
+</div>

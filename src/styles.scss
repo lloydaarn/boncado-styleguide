@@ -6,17 +6,22 @@
 // base 
 @import '~src/styles/base/reboot';
 @import '~src/styles/base/base';
+@import '~src/styles/base/typography';
+
 
 // compontents
 @import '~src/styles/components/buttons';
 @import '~src/styles/components/forms';
 @import '~src/styles/components/tables';
+@import '~src/styles/components/modals';
+@import '~src/styles/components/tooltips';
+@import '~src/styles/components/popovers';
 
 // utilities
 @import '~src/styles/utilities/bootstrap-4-utilities';
 @import '~src/styles/utilities/spacing';
 @import '~src/styles/utilities/color';
-@import '~src/styles/utilities/typography';
+@import '~src/styles/utilities/type';
 
 // boncado-styleguide app styles
 @import '~src/styles/app/syntax';

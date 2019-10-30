@@ -7,20 +7,16 @@ form {
         &:not(textarea) {
             height: 40px;
         }
-    }
-}
-
-.form-default {
-    label {
-        .required {
-            color: #c6c6c6;
+        &[readonly] {
+            background-color: #EBF0F2;
+            box-shadow: none;
+        }
+        &[disabled] {
+            opacity: .75;
         }
     }
-    .form-control {
-        border: 0;
-        border-radius: 2px;
-        background-color: #EBF0F2;
-        box-shadow: none;
+    select[multiple] {
+        height: auto;
     }
 }
 
@@ -128,40 +124,70 @@ form {
     }
 }
 
-.bc-checkbox {
+.bc-checkbox,
+.bc-radio {
     position: relative;
+    display: block;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     label {
         padding: 0;
+        margin-bottom: 0;
         user-select: none;
+        font-weight: normal;
+        cursor: pointer;
     }
     input {
         display: none;
+        &[disabled] {
+            ~ span {
+                opacity: 0.75;
+                cursor: not-allowed;
+            }
+        }
+    }
+    input ~ span {
+        position: relative;
+        padding-left: 25px;
+        &:before {
+            position: absolute;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d4d4d4;
+            font-family: 'Font Awesome 5 Pro';
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            color: transparent;
+        }
+    }
+}
+
+.checkbox-inline,
+.radio-inline {
+    display: inline-block;
+    margin-top: 10px !important;
+}
+
+.bc-checkbox {
+    input {
         &:checked ~ span:before {
             color: #333;
         }
     }
     span {
-        position: relative;
-        padding-left: 25px;
         &:before {
-            position: absolute;
-            left: 0;
-            top: 0;
-            border: 1px solid #d4d4d4;
-            width: 16px;
-            height: 16px;
             background-color: #ebf0f2;
-            font-family: 'Font Awesome 5 Pro';
             font-weight: 500;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
             display: inline-block;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
             line-height: 16px;
             text-align: center;
-            color: transparent;
             font-size: 12px;
             content: "\f00c";
         }
@@ -169,40 +195,22 @@ form {
 }
 
 .bc-radio {
-    position: relative;
-    label {
-        padding: 0;
-        user-select: none;
-    }
     input {
-        display: none;
         &:checked ~ span:before {
             color: #3e3e3e;
         }
     }
     span {
-        position: relative;
-        padding-left: 25px;
         &:before {
-            position: absolute;
-            left: 0;
-            top: 0;
             display: flex;
+            display: -ms-flexbox;
+            -ms-flex-align: center;
             align-items: center;
             justify-content: center;
-            border: 1px solid #d4d4d4;
-            width: 16px;
-            height: 16px;
+            -ms-flex-pack: justify;
             background-color: transparent;
-            font-family: 'Font Awesome 5 Pro';
             font-weight: 900;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
             border-radius: 50%;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            color: transparent;
             font-size: 10px;
             content: "\f111";
         }
