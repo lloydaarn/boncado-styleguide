@@ -22,39 +22,8 @@ form {
 
 .form-primary {
     .form-control {
-        border-color: $primary-color;
-        &:focus {
-            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(246, 24, 105, 0.5);
-            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(246, 24, 105, 0.5);
-        }
-    }
-    .bc-checkbox {
-        input {
-            &:checked ~ span:before {
-                color: #fff;
-                background-color: $primary-color;
-            }
-        }
-        span:before {
-            background-color: #fff;
-            border-color: $primary-color;
-        }
-    }
-    .bc-radio {
-        input {
-            &:checked ~ span:before {
-                color: $primary-color;
-            }
-        }
-        span:before {
-            border-color: $primary-color;
-        }
-    }
-}
-
-.form-secondary {
-    .form-control {
         border-color: $secondary-color;
+        background-color: transparent;
         &:focus {
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(17, 203, 156, 0.5);
             -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(17, 203, 156, 0.5);
@@ -67,11 +36,9 @@ form {
                 background-color: $secondary-color;
             }
         }
-        span {
-            &:before {
-                background-color: #fff;
-                border-color: $secondary-color;
-            }
+        span:before {
+            background-color: #fff;
+            border-color: $secondary-color;
         }
     }
     .bc-radio {
@@ -82,6 +49,45 @@ form {
         }
         span:before {
             border-color: $secondary-color;
+        }
+    }
+}
+
+.form-dark {
+    label {
+        color: #161720;
+    }
+    .form-control {
+        border-color: #161720;
+        box-shadow: none;
+        background-color: transparent;
+        color: #161720;
+        &:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(255, 255, 255, 0.8);
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+    }
+    .bc-checkbox {
+        input {
+            &:checked ~ span:before {
+                color: #161720;
+            }
+        }
+        span {
+            &:before {
+                background-color: transparent;
+                border-color: #161720;
+            }
+        }
+    }
+    .bc-radio {
+        input {
+            &:checked ~ span:before {
+                color: #161720;
+            }
+        }
+        span:before {
+            border-color: #161720;
         }
     }
 }
@@ -183,8 +189,7 @@ form {
     }
     span {
         &:before {
-            background-color: #ebf0f2;
-            font-weight: 500;
+            font-weight: 600;
             display: inline-block;
             line-height: 16px;
             text-align: center;
@@ -263,5 +268,75 @@ form {
 .radiobutton-group {
     .bc-radiobutton {
         margin: 0 15px 6px 0;
+    }
+}
+
+.bc-toggle {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    display: -ms-flex;
+    align-items: center;
+    -ms-flex-align: center;
+    label.toggle-label {
+        display: inline-block;
+        margin: 0 10px;
+        font-weight: normal;
+        user-select: none;
+    }
+    label.toggle-ui {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        height: 20px;
+        width: 38px;
+        input {
+            display: none;
+            &:checked ~ span {
+                &:before {
+                    background-color: $secondary-color;
+                    opacity: 0.5;
+                }
+                &:after {
+                    background-color: $secondary-color;
+                    left: 20px;
+                }
+            }
+        }
+        span {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            &:before,
+            &:after {
+                position: absolute;
+                transition: all 0.15s ease-in-out;
+                content: "";
+            }
+            &:before {
+                top: 4px;
+                width: 38px;
+                height: 12px;
+                background: #e2e2e2;
+                box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+            }
+            &:after {
+                position: absolute;
+                top: 0;
+                left: -4px;
+                width: 20px;
+                height: 20px;
+                border-radius: 16px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+                transition: all 0.15s ease-in-out;
+                background-color: #efefef;
+                content: '';
+            }
+        }
     }
 }

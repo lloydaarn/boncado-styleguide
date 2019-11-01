@@ -1,4 +1,7 @@
 div.tooltip {
+    &.in {
+        opacity: 1;
+    }
     &.top .tooltip-arrow {
         border-top-color: #161720;
     }

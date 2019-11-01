@@ -1,13 +1,21 @@
-.bs-example-tooltips {
+@import "~src/styles/abstracts/variables";
+
+.bd-example-tooltips {
     text-align: center;
-  }
-  .bs-example-tooltips > .btn {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .bs-example-tooltip .tooltip {
+}
+.bd-example-tooltips > .btn {
+    margin: 5px 10px;
+}
+.bd-example-tooltip .tooltip {
     position: relative;
     display: inline-block;
     margin: 10px 20px;
     opacity: 1;
-  }
+}
+
+.tooltip-demo {
+    a {
+        white-space: normal;
+        color: $secondary-color;
+    }
+}

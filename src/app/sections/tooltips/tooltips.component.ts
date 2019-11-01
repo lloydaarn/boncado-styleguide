@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+declare var $;
 
 @Component({
   selector: 'app-tooltips',
@@ -14,7 +14,7 @@ export class TooltipsComponent implements OnInit {
   ngOnInit() {
 
     $(document).ready(function() {
-      // $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
     })
 
   }

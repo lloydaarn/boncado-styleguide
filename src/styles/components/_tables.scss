@@ -247,6 +247,20 @@
   background-color: rgba(0, 0, 0, 0.075);
 }
 
+.table .thead-primary {
+  th {
+    color: #fff;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  .sorting_asc {
+    &:after {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
 .table .thead-dark th {
   color: #fff;
   background-color: #343a40;
