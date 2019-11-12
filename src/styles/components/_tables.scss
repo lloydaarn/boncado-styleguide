@@ -7,6 +7,7 @@
 
 .table th,
 .table td {
+  text-align: left;
   padding: 12px;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
@@ -48,12 +49,12 @@
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #E7EEEE;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .table-hover tbody tr:hover {
   color: #212529;
-  background-color: #E7EEEE;
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .table-primary,
@@ -269,8 +270,8 @@
 
 .table .thead-light th {
   color: #495057;
-  background-color: #E7EEEE;
-  border-color: #E7EEEE;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
 }
 
 .table-dark {
@@ -387,6 +388,56 @@
     .bc-responsive-table td:before {
       position: absolute;
       top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
+    .bc-responsive-table td:before {
+      content: attr(data-title);
+    }
+}
+
+.table-primary {
+  th {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .bc-responsive-table table,
+    .bc-responsive-table thead,
+    .bc-responsive-table tbody,
+    .bc-responsive-table tfoot,
+    .bc-responsive-table th,
+    .bc-responsive-table td,
+    .bc-responsive-table tr {
+      display: block;
+    }
+    .bc-responsive-table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .bc-responsive-table tr {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    .bc-responsive-table tbody td {
+      border: none;
+      border-bottom: 1px solid #eee !important;
+      position: relative;
+      padding-left: 40% !important;
+      white-space: normal;
+      text-align: left;
+    }
+   
+    .bc-responsive-table td:before {
+      position: absolute;
+      top: 12px;
       left: 6px;
       width: 45%;
       padding-right: 10px;
